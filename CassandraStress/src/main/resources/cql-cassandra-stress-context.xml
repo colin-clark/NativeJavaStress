@@ -15,9 +15,9 @@
 		<constructor-arg value="${keyspaceName:cql_cassandra_stress_ks}" />
 		<constructor-arg value="${replicationFactor:1}" />
 		<constructor-arg value="${minSimultaneousRequestsForLocal:25}" />
-		<constructor-arg value="${maxSimultaneousRequestsForLocal:100}" />
-		<constructor-arg value="${coreConnectionsForLocal:10}" />
-		<constructor-arg value="${maxConnectionsForLocal:10}" />
+		<constructor-arg value="${maxSimultaneousRequestsForLocal:128}" />
+		<constructor-arg value="${coreConnectionsForLocal:2}" />
+		<constructor-arg value="${maxConnectionsForLocal:8}" />
 		<constructor-arg value="${baseDelayMs:10}" />
 		<constructor-arg value="${maxDelayMs:100}" />
 		
